@@ -1,0 +1,19 @@
+Commands For Erlang
+
+"C:/Users/ammon/Documents/BYUI-Semester 1/CSE 310 Applied Programming/Sprint 5/src/helloworld.erl"
+
+(Refresh the compiler with the new changes made in the code file)
+compile:file("C:/Users/ammon/Documents/BYUI-Semester 1/CSE 310 Applied Programming/Sprint 5/src/helloworld.erl").
+
+c(helloworld)
+
+(Run/execute the code)
+helloworld:hello_world().
+
+NEW Commands
+
+Compile:
+erlc -o ebin .\src\helloworld.erl
+
+Run:
+erl -noshell -pa .\ebin -s helloworld hello_world -s init stop
